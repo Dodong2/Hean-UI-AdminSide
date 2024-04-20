@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --card-bg: #142629;
+  --card-btn2-bg: rgba(0, 0, 0, 0.2);
+  --card-btn3-red: #ff4848;
+}
+
+body {
+  background-color: var(--card-bg);
+}
+::-webkit-scrollbar {
+  display: none;
+}
