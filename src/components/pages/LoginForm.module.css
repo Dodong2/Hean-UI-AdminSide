@@ -118,7 +118,7 @@ input {
 .fill {
   position: relative;
 }
-form button.button-submit {
+form .button-submit {
   display: flex;
   width: 100%;
   height: 44px;
@@ -126,16 +126,15 @@ form button.button-submit {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  flex-shrink: 0;
+  flex-shrink: 100px;
   border-radius: 4px;
   background: linear-gradient(103deg, #00e0ff -91.33%, #029 97.14%);
   color: #fff;
   margin-bottom: 24px;
-  border: transparent;
+  border: none;
   cursor: pointer;
   transition: all ease-in 0.25s;
 }
-
 
 .button-submit:hover {
   box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029;
@@ -144,6 +143,8 @@ form button.button-submit {
     color 0.4s ease-in-out;
   animation: shadow-color 2s linear infinite;
 }
+
+
 form p {
   color: #fff;
   text-align: center;

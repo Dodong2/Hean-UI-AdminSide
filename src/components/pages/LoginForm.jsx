@@ -10,6 +10,9 @@ const LoginForm = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
+  const btnSubmit = <button className={LoginStyle["button-submit"]} type="submit">Login</button>
+
   return (
     <div className={LoginStyle["login-body"]}>
       <div className={LoginStyle["form-container"]}>
@@ -52,10 +55,9 @@ const LoginForm = () => {
             <input type="checkbox" />
             Keep me sign in
           </div>
-    
-          <button className={LoginStyle["button-submit"]} type="submit">
-            Login
-          </button>
+          <Link to='/Home' style={{ textDecoration: 'none'}}  className={LoginStyle["button-submit"]}>
+          {btnSubmit}
+          </Link>
           <p>
             Dont have an account? <Link to="/RegisterForm">Sign Up Here</Link>
           </p>
