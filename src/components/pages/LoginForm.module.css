@@ -134,7 +134,11 @@ form .button-submit {
   border: none;
   cursor: pointer;
   transition: all ease-in 0.25s;
+  -webkit-text-fill-color: white;
 }
+
+
+
 
 .button-submit:hover {
   box-shadow: 5px 5px 35px #029, 0 0 20px #00e0ff, 0 0 30px #029;

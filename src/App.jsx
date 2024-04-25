@@ -4,6 +4,8 @@ import OTPVerification from './components/pages/OTPVerification';
 import OTP from './components/pages/OTP'
 import Register from './components/pages/RegisterForm'
 import Home from './components/pages/Home'
+import History from './components/pages/History'
+
 import './App.css';
 
 function App() {
@@ -16,8 +18,10 @@ function App() {
         <Route path="/OTP" element={<OTP />} />
         <Route path='/RegisterForm' element={<Register />} />
         <Route path='/Home' element={<Home/>} />
+        <Route path='/History' element={<History/>}/>
       </Routes>
     </BrowserRouter>
+
   );
 }
 

@@ -1,4 +1,3 @@
-import React from "react"
 export const historyData = [
     {
         date: "Jan 6, 2024",

@@ -13,12 +13,15 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-    <div className='main-container'>
       <div className='home-adminSide-container'>
+  {/* Reusable Code */}
         <nav>
           <div className="host-name-left">
             <h1>CMC HOSTPITAL</h1>
-            <p><FaLocationDot /> LOS BAÑOS, LAGUNA</p>
+            <div className="host-loc">
+            <FaLocationDot className="icon" />
+            <p> LOS BAÑOS, LAGUNA</p>
+            </div>
           </div>
           <div className="host-logo-right">
             <div className="right-layer1">
@@ -35,10 +38,11 @@ const Home = () => {
           <div className='emergency'>
             <div className='emergency-history-layer1'>
               <h1>EMERGENCY ALERT</h1>
+              <Link to='/History' style={{ textDecoration: 'none'}}>
               <div className='history-layer'>
                 <MdHistory className='icon1' />
                 <p>History</p>
-              </div>
+              </div></Link>
             </div>
             <div className='emergency-btns'>
               <Link to='' style={{ textDecoration: 'none' }}>
@@ -49,7 +53,10 @@ const Home = () => {
                     </div>
                     <div className="layer1-element2">
                       <h3>Emergency Alert</h3>
-                      <p><FaLocationDot className="icon2" /> LOS BAÑOS, LAGUNA</p>
+                      <div className="txt-loc">
+                      <FaLocationDot className="icon2" />
+                      <p> LOS BAÑOS, LAGUNA</p>
+                      </div>
                     </div>
                   </div>
                   <div className="btns-layer2"><FaAngleRight /></div>
@@ -65,7 +72,10 @@ const Home = () => {
                     </div>
                     <div className="layer1-element2">
                       <h3>Emergency Alert</h3>
-                      <p><FaLocationDot className="icon2" /> LOS BAÑOS, LAGUNA</p>
+                      <div className="txt-loc">
+                      <FaLocationDot className="icon2" />
+                      <p> LOS BAÑOS, LAGUNA</p>
+                      </div>
                     </div>
                   </div>
                   <div className="btns-layer2"><FaAngleRight /></div>
@@ -81,7 +91,10 @@ const Home = () => {
                     </div>
                     <div className="layer1-element2">
                       <h3>Emergency Alert</h3>
-                      <p><FaLocationDot className="icon2" /> LOS BAÑOS, LAGUNA</p>
+                      <div className="txt-loc">
+                      <FaLocationDot className="icon2" />
+                      <p> LOS BAÑOS, LAGUNA</p>
+                      </div>
                     </div>
                   </div>
                   <div className="btns-layer2"><FaAngleRight /></div>
@@ -97,13 +110,17 @@ const Home = () => {
                     </div>
                     <div className="layer1-element2">
                       <h3>Emergency Alert</h3>
-                      <p><FaLocationDot className="icon2" /> LOS BAÑOS, LAGUNA</p>
+                      <div className="txt-loc">
+                      <FaLocationDot className="icon2" />
+                      <p> LOS BAÑOS, LAGUNA</p>
+                      </div>
                     </div>
                   </div>
                   <div className="btns-layer2"><FaAngleRight /></div>
                 </div>
               </Link>
-            </div>
+            </div><br />
+            
           </div>
           {/* Services offer right side*/}
           <div className='services-offer'>
@@ -126,7 +143,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   )
