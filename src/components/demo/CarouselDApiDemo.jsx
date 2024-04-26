@@ -34,7 +34,7 @@ export function CarouselDApiDemo() {
         <CarouselContent>
           {Array.from({ length: 10 }).map((_, index) => (
             <CarouselItem key={index}>
-              <Card className=' bg-custom-dark carousel-tailwind2 rounded-none'>
+              <Card className='bg-custom-dark carousel-tailwind2 rounded-none'>
                 <CardContent className="aspect-square p-0">
                   <div className="table-info">
                     <div className="table-date">Date <FaArrowDownLong className="icon4" /></div>

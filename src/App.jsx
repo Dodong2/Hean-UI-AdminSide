@@ -5,6 +5,8 @@ import OTP from './components/pages/OTP'
 import Register from './components/pages/RegisterForm'
 import Home from './components/pages/Home'
 import History from './components/pages/History'
+import EditProfile from './components/pages/EditProfile';
+import NotifAdmin from './components/pages/NotifAdmin';
 
 import './App.css';
 
@@ -12,6 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+      {<Route path='/NotifAdmin' element={<NotifAdmin/>}/>}
         <Route path='/' element={<LoginForm />} />
         <Route path='/LoginForm' element={<LoginForm />} />
         <Route path="/OTPVerification" element={<OTPVerification />} />
@@ -19,6 +22,7 @@ function App() {
         <Route path='/RegisterForm' element={<Register />} />
         <Route path='/Home' element={<Home/>} />
         <Route path='/History' element={<History/>}/>
+        <Route path='/EditProfile' element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>
 

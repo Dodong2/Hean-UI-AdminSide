@@ -31,8 +31,13 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundColor: {
+        'custom-black': '#161616'
+      },
       colors: {
         'custom-dark': '#142629',
+        'custom-blue': '#2957ff',
+        'custom-red': '#F00',
       },
       spacing: {
         '5': '2.25rem', // You can adjust this value as needed

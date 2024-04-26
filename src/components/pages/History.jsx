@@ -25,7 +25,9 @@ const History = () => {
             </div>
             <div className='right-layer2'>
               <h3>CMC HOSTPITAL</h3>
-              <p>Edit Profile</p>
+              <Link to='/EditProfile'>
+                <p>Edit Profile</p>
+              </Link>
             </div>
           </div>
         </nav>
