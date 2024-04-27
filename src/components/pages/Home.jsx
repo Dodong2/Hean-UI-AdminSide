@@ -8,7 +8,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import DialogDemo from '../demo/DialogDemo';
-
+import { FaToolbox } from "react-icons/fa6";
+import { BiSolidDoorOpen } from "react-icons/bi";
+import { FaUserDoctor } from "react-icons/fa6";
+import { IoBedSharp } from "react-icons/io5";
 const Home = () => {
   return (
     <>
@@ -147,13 +150,11 @@ const Home = () => {
                 <div className="btns">
                   <div className="btns-layer1">
                     <div className="layer1-element1">
-                      <IoIosWarning />
+                      <FaToolbox />
                     </div>
                     <div className="layer1-element2">
-                      <h3>Services Offered</h3>
+                      <h3>Equipments</h3>
                       <div className="txt-loc">
-                        <FaLocationDot className="icon2" />
-                        <p> LOS BAÑOS, LAGUNA</p>
                       </div>
                     </div>
                   </div>
@@ -165,13 +166,11 @@ const Home = () => {
                 <div className="btns">
                   <div className="btns-layer1">
                     <div className="layer1-element1">
-                      <IoIosWarning />
+                      <BiSolidDoorOpen />
                     </div>
                     <div className="layer1-element2">
-                      <h3>Services Offered</h3>
+                      <h3>Rooms</h3>
                       <div className="txt-loc">
-                        <FaLocationDot className="icon2" />
-                        <p> LOS BAÑOS, LAGUNA</p>
                       </div>
                     </div>
                   </div>
@@ -183,13 +182,11 @@ const Home = () => {
                 <div className="btns">
                   <div className="btns-layer1">
                     <div className="layer1-element1">
-                      <IoIosWarning />
+                      <FaUserDoctor />
                     </div>
                     <div className="layer1-element2">
-                      <h3>Services Offered</h3>
+                      <h3>Doctors</h3>
                       <div className="txt-loc">
-                        <FaLocationDot className="icon2" />
-                        <p> LOS BAÑOS, LAGUNA</p>
                       </div>
                     </div>
                   </div>
@@ -201,13 +198,11 @@ const Home = () => {
                 <div className="btns">
                   <div className="btns-layer1">
                     <div className="layer1-element1">
-                      <IoIosWarning />
+                      <IoBedSharp />
                     </div>
                     <div className="layer1-element2">
                       <h3>Services Offered</h3>
                       <div className="txt-loc">
-                        <FaLocationDot className="icon2" />
-                        <p> LOS BAÑOS, LAGUNA</p>
                       </div>
                     </div>
                   </div>
