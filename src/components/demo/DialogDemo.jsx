@@ -15,7 +15,7 @@ export default function DialogDemo() {
   return (
     <Dialog className='border-custom-red'>
       <DialogTrigger asChild>
-        <Button variant="outline" className='mt-4 absolute'>Add Service/Bed</Button>
+        <Button variant="outline" className='mt-4'>Add Service/Bed</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -45,7 +45,7 @@ export default function DialogDemo() {
             />
           </div>
         </div>
-        <DialogFooter>
+        <DialogFooter className='gap-3'>
           <Button type="submit">Save Beds</Button>
           <Button type="submit">Save Services</Button>
         </DialogFooter>

@@ -2,6 +2,7 @@ import { IoEyeSharp } from "react-icons/io5";
 import LoginStyle from "./LoginForm.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Load from './Loading'
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,6 +12,8 @@ const LoginForm = () => {
   };
 
   return (
+    <>
+    <Load/>
     <div className={LoginStyle['login-body']}>
       <div className={LoginStyle["form-container"]}>
         <div className={LoginStyle["register-headers"]}>
@@ -106,6 +109,7 @@ const LoginForm = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 
