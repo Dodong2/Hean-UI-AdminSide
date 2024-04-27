@@ -7,6 +7,7 @@ import Home from './components/pages/Home'
 import History from './components/pages/History'
 import EditProfile from './components/pages/EditProfile';
 import NotifAdmin from './components/pages/NotifAdmin';
+import ServicesView from './components/pages/ServicesView';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/RegisterForm' element={<Register />} />
         <Route path='/Home' element={<Home/>} />
         <Route path='/History' element={<History/>}/>
+        <Route path='/ServicesView' element={<ServicesView/>}/>
         <Route path='/EditProfile' element={<EditProfile/>}/>
       </Routes>
     </BrowserRouter>

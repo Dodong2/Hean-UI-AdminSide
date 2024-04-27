@@ -94,6 +94,7 @@ form .fill {
 }
 input {
   color: #fff;
+  -webkit-text-fill-color: white;
 }
 .eye-icon {
   position: absolute;

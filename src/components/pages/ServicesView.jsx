@@ -2,12 +2,12 @@
 import { FaLocationDot } from "react-icons/fa6";
 import JPHost from '../images/JP Hostpital.svg'
 import { FaArrowLeft } from "react-icons/fa";
-import { CarouselDApiDemo } from "../demo/CarouselDApiDemo";
+import { CarouselDApiDemo1 } from "../demo/CarouselDApiDemo1";
 import Load from './Loading'
 import { Link } from "react-router-dom";
 
 
-const History = () => {
+const ServicesView = () => {
   return (
     <>
     <Load/>
@@ -38,11 +38,11 @@ const History = () => {
           <Link to='/Home'>
             <div className="history-icon1"><FaArrowLeft /></div>
           </Link>
-          <div className="history-title"><h1>Emergency history</h1></div>
+          <div className="history-title"><h1>Services Offer</h1></div>
           <div></div>
         </div>
         <div className="history-table">
-          <CarouselDApiDemo />
+          <CarouselDApiDemo1 />
         </div>
 
       </div>
@@ -50,4 +50,4 @@ const History = () => {
   )
 }
 
-export default History
+export default ServicesView

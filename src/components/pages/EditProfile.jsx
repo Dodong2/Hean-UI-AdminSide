@@ -5,6 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import AddIcons from '../images/addIcons.svg'
 import { IoIosCloseCircle } from "react-icons/io";
+import Load from './Loading'
 import { Link } from "react-router-dom";
 
 const EditProfile = () => {
@@ -18,6 +19,7 @@ const EditProfile = () => {
     };
     return (
         <>
+        <Load/>
             <div className="main-edit-prof-container">
                 {/* Reusable Code */}
                 <nav>

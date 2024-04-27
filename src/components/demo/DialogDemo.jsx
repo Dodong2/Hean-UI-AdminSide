@@ -15,39 +15,39 @@ export default function DialogDemo() {
   return (
     <Dialog className='border-custom-red'>
       <DialogTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <Button variant="outline" className='mt-4 absolute'>Add Service/Bed</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
+          <DialogTitle className='text-custom-blue'>Services & Bed</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
-              Name
+              Beds
             </Label>
             <Input
               id="name"
-              defaultValue="Pedro Duarte"
+              defaultValue="Number of Beds"
               className="col-span-3"
             />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="username" className="text-right">
-              Username
+              Services
             </Label>
             <Input
               id="username"
-              defaultValue="@peduarte"
+              defaultValue="Hospital Services"
               className="col-span-3"
             />
           </div>
         </div>
         <DialogFooter>
-          <Button type="submit">Save changes</Button>
+          <Button type="submit">Save Beds</Button>
+          <Button type="submit">Save Services</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
