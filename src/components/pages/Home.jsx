@@ -201,7 +201,7 @@ const Home = () => {
                       <IoBedSharp />
                     </div>
                     <div className="layer1-element2">
-                      <h3>Services Offered</h3>
+                      <h3>Beds</h3>
                       <div className="txt-loc">
                       </div>
                     </div>
