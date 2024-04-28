@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogTrigger } from "@radix-ui/react-dialog";
 import DialogDemo from '../demo/DialogDemo';
+import DialogDemo1 from '../demo/DialogDemo1';
 import { FaToolbox } from "react-icons/fa6";
 import { BiSolidDoorOpen } from "react-icons/bi";
 import { FaUserDoctor } from "react-icons/fa6";
@@ -15,7 +16,7 @@ import { IoBedSharp } from "react-icons/io5";
 const Home = () => {
   return (
     <>
-    <Load/>
+      <Load />
       <div className='home-adminSide-container'>
         {/* Reusable Code */}
         <nav>
@@ -33,17 +34,24 @@ const Home = () => {
             <div className='right-layer2'>
               <h3>CMC HOSTPITAL</h3>
               <Link to='/EditProfile'>
-              <p>Edit Profile</p>
+                <p>Edit Profile</p>
               </Link>
             </div>
           </div>
         </nav>
         {/* Render the DialogDemo */}
-        <Dialog>
-        <DialogTrigger asChild={<Button variant="outline" className='btn-modal'>Edit Profile</Button>}>
-        </DialogTrigger>
-        <DialogDemo />
-  </Dialog>
+        <div className='Dialog-btns'>
+          <Dialog>
+            <DialogTrigger asChild={<Button variant="outline" className='btn-modal'></Button>}>
+            </DialogTrigger>
+            <DialogDemo />
+          </Dialog>
+          <Dialog>
+            <DialogTrigger asChild={<Button variant="outline" className='btn-modal'></Button>}>
+            </DialogTrigger>
+            <DialogDemo1 />
+          </Dialog>
+        </div>
         <div className='emergency-container'>
           {/* Emergency Left side*/}
           <div className='emergency'>
@@ -134,7 +142,7 @@ const Home = () => {
           </div>
 
 
-          
+
           {/* Services offer right side*/}
           <div className='emergency'>
             <div className='emergency-history-layer1-blue'>
@@ -211,7 +219,7 @@ const Home = () => {
             </div><br />
           </div>
         </div>
-        
+
       </div>
     </>
   )

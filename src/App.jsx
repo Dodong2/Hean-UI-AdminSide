@@ -8,6 +8,7 @@ import History from './components/pages/History'
 import EditProfile from './components/pages/EditProfile';
 import NotifAdmin from './components/pages/NotifAdmin';
 import ServicesView from './components/pages/ServicesView';
+import Resetpass from './components/pages/ResetPass';
 
 import './App.css';
 
@@ -16,7 +17,8 @@ function App() {
     <BrowserRouter>
       <Routes>
       {<Route path='/NotifAdmin' element={<NotifAdmin/>}/>}
-        <Route path='/' element={<LoginForm />} />
+      <Route path='/Resetpass' element={<Resetpass/>}/>
+        <Route path='/LoginForm' element={<LoginForm />} />
         <Route path='/LoginForm' element={<LoginForm />} />
         <Route path="/OTPVerification" element={<OTPVerification />} />
         <Route path="/OTP" element={<OTP />} />
