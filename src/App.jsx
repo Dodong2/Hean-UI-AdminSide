@@ -18,7 +18,7 @@ function App() {
       <Routes>
       {<Route path='/NotifAdmin' element={<NotifAdmin/>}/>}
       <Route path='/Resetpass' element={<Resetpass/>}/>
-        <Route path='/LoginForm' element={<LoginForm />} />
+        <Route path='/' element={<LoginForm />} />
         <Route path='/LoginForm' element={<LoginForm />} />
         <Route path="/OTPVerification" element={<OTPVerification />} />
         <Route path="/OTP" element={<OTP />} />
